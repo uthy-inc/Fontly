@@ -1,0 +1,264 @@
+@font-face {
+    font-family: 'Angelbanditdemoregular';
+    src: url('./ttf/AngelBanditDemoRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cinzeldecorative Black';
+    src: url('./otf/CinzelDecorative-Black.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cinzeldecorative Bold';
+    src: url('./otf/CinzelDecorative-Bold.otf') format('opentype'), url('./ttf/CinzelDecorative-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cinzeldecorative Regular';
+    src: url('./otf/CinzelDecorative-Regular.otf') format('opentype'), url('./ttf/CinzelDecorative-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ebgaramond Initials';
+    src: url('./ttf/EBGaramond-Initials.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ebgaramond Initialsf1';
+    src: url('./ttf/EBGaramond-InitialsF1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ebgaramond Initialsf2';
+    src: url('./ttf/EBGaramond-InitialsF2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ebgaramond08 Italic';
+    src: url('./ttf/EBGaramond08-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ebgaramond08 Regular';
+    src: url('./ttf/EBGaramond08-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ebgaramond12 Allsc';
+    src: url('./ttf/EBGaramond12-AllSC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ebgaramond12 Italic';
+    src: url('./ttf/EBGaramond12-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ebgaramond12 Regular';
+    src: url('./ttf/EBGaramond12-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ebgaramondsc08 Regular';
+    src: url('./ttf/EBGaramondSC08-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ebgaramondsc12 Regular';
+    src: url('./ttf/EBGaramondSC12-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodly Extralight';
+    src: url('./otf/goodly-extralight.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodly Light';
+    src: url('./otf/goodly-light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodly Medium';
+    src: url('./otf/goodly-medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodly Regular';
+    src: url('./otf/goodly-regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goodly Semibold';
+    src: url('./otf/goodly-semibold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kabisat Demo Italic Tall';
+    src: url('./ttf/kabisat-demo.italic-tall.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kugile Regular';
+    src: url('./ttf/kugile.regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Modernline Personal Use Bold';
+    src: url('./otf/modernline-personal-use.bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Modernline Personal Use Regular';
+    src: url('./otf/modernline-personal-use.regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nabana Shadow Bold';
+    src: url('./ttf/nabana.shadow-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noctra Drip Outline Outline';
+    src: url('./ttf/noctra-drip.outline-outline.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noctra Drip Outline Outline (1)';
+    src: url('./ttf/noctra-drip.outline-outline (1).ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Orange Avenue Demo Outline';
+    src: url('./otf/orange-avenue-demo.outline.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Orange Avenue Demo Regular';
+    src: url('./otf/orange-avenue-demo.regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rockybilly Regular';
+    src: url('./ttf/rockybilly.regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sho Card Caps Regular';
+    src: url('./ttf/sho-card-caps.regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sho Card Caps Regular (2)';
+    src: url('./ttf/sho-card-caps.regular (2).ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Strenuous 3D';
+    src: url('./otf/strenuous.3d.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sudegnakno4 Green Medium';
+    src: url('./ttf/sudegnakno4.green-medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
