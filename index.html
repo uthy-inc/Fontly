@@ -3,435 +3,221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Font Preview Gallery - 34 Premium Fonts</title>
-    <meta name="description" content="Interactive web font preview gallery showcasing 34 premium fonts with live customization and CSS copy functionality.">
-    <meta name="theme-color" content="#1a73e8">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Fontly - Interactive Font Preview Gallery with 34 Premium Fonts">
+    <title>Fontly - Font Preview Gallery</title>
     <link rel="manifest" href="/manifest.json">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%231a73e8' width='192' height='192'/><text x='50%' y='50%' font-size='96' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>F</text></svg>">
-    
-    <!-- Preconnect to font domain -->
-    <link rel="preconnect" href="https://fontly-virid.vercel.app" crossorigin>
-    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' font-weight='bold' fill='%23FF6B6B'>F</text></svg>">
     <style>
-        /* ==================== CSS VARIABLES & THEME ==================== */
-        :root {
-            --bg-primary: #fafbfc;
-            --bg-secondary: #ffffff;
-            --bg-tertiary: #f1f3f4;
-            --text-primary: #1a1a1a;
-            --text-secondary: #5f6368;
-            --text-muted: #80868b;
-            --border-color: #dadce0;
-            --accent-color: #1a73e8;
-            --accent-hover: #1557b0;
-            --shadow-color: rgba(0, 0, 0, 0.08);
-            --card-shadow: 0 2px 8px var(--shadow-color);
-            --focus-ring: 0 0 0 3px rgba(26, 115, 232, 0.15);
-            --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        [data-theme="dark"] {
-            --bg-primary: #121212;
-            --bg-secondary: #1e1e1e;
-            --bg-tertiary: #2d2d2d;
-            --text-primary: #e8eaed;
-            --text-secondary: #9aa0a6;
-            --text-muted: #9aa0a6;
-            --border-color: #3c4043;
-            --accent-color: #8ab4f8;
-            --accent-hover: #aecbfa;
-            --shadow-color: rgba(0, 0, 0, 0.35);
-            --card-shadow: 0 2px 12px var(--shadow-color);
-            --focus-ring: 0 0 0 3px rgba(138, 180, 248, 0.2);
-        }
-
-        /* ==================== RESET & BASE STYLES ==================== */
-        *, *::before, *::after {
-            box-sizing: border-box;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f5f5f5;
+            --text-primary: #333333;
+            --text-secondary: #666666;
+            --border-color: #e0e0e0;
+            --accent-color: #FF6B6B;
+            --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        body.dark-mode {
+            --bg-primary: #1a1a1a;
+            --bg-secondary: #2d2d2d;
+            --text-primary: #ffffff;
+            --text-secondary: #b0b0b0;
+            --border-color: #404040;
+            --shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             background-color: var(--bg-primary);
             color: var(--text-primary);
-            line-height: 1.5;
-            transition: var(--transition);
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        /* ==================== FONT FACE DEFINITIONS ==================== */
-        @font-face {
-            font-family: "Angelbanditdemoregular";
-            src: url("https://fontly-virid.vercel.app/fonts/ttf/AngelBanditDemoRegular.ttf") format("truetype");
-            font-weight: normal;
-            font-style: normal;
-            font-display: swap;
-        }
-
-        @font-face {
-            font-family: "Cinzeldecorative Black";
-            src: url("https://fontly-virid.vercel.app/fonts/otf/CinzelDecorative-Black.otf") format("opentype");
-            font-weight: normal;
-            font-style: normal;
-            font-display: swap;
-        }
-
-        @font-face {
-            font-family: "Cinzeldecorative Bold";
-            src: url("https://fontly-virid.vercel.app/fonts/otf/CinzelDecorative-Bold.otf") format("opentype"), url("https://fontly-virid.vercel.app/fonts/ttf/CinzelDecorative-Bold.ttf") format("truetype");
-            font-weight: normal;
-            font-style: normal;
-            font-display: swap;
-        }
-
-        @font-face {
-            font-family: "Cinzeldecorative Regular";
-            src: url("https://fontly-virid.vercel.app/fonts/otf/CinzelDecorative-Regular.otf") format("opentype"), url("https://fontly-virid.vercel.app/fonts/ttf/CinzelDecorative-Regular.ttf") format("truetype");
-            font-weight: normal;
-            font-style: normal;
-            font-display: swap;
-        }
-
-        @font-face {
-            font-family: "Ebgaramond Initials";
-            src: url("https://fontly-virid.vercel.app/fonts/ttf/EBGaramond-Initials.ttf") format("truetype");
-            font-weight: normal;
-            font-style: normal;
-            font-display: swap;
-        }
-
-        @font-face {
-            font-family: "Ebgaramond08 Regular";
-            src: url("https://fontly-virid.vercel.app/fonts/ttf/EBGaramond08-Regular.ttf") format("truetype");
-            font-weight: normal;
-            font-style: normal;
-            font-display: swap;
-        }
-
-        @font-face {
-            font-family: "Ebgaramond12 Regular";
-            src: url("https://fontly-virid.vercel.app/fonts/ttf/EBGaramond12-Regular.ttf") format("truetype");
-            font-weight: normal;
-            font-style: normal;
-            font-display: swap;
-        }
-
-        @font-face {
-            font-family: "Goodly Regular";
-            src: url("https://fontly-virid.vercel.app/fonts/otf/goodly-regular.otf") format("opentype");
-            font-weight: normal;
-            font-style: normal;
-            font-display: swap;
-        }
-
-        @font-face {
-            font-family: "Goodly Light";
-            src: url("https://fontly-virid.vercel.app/fonts/otf/goodly-light.otf") format("opentype");
-            font-weight: normal;
-            font-style: normal;
-            font-display: swap;
-        }
-
-        @font-face {
-            font-family: "Goodly Medium";
-            src: url("https://fontly-virid.vercel.app/fonts/otf/goodly-medium.otf") format("opentype");
-            font-weight: normal;
-            font-style: normal;
-            font-display: swap;
-        }
-
-        @font-face {
-            font-family: "Goodly Semibold";
-            src: url("https://fontly-virid.vercel.app/fonts/otf/goodly-semibold.otf") format("opentype");
-            font-weight: normal;
-            font-style: normal;
-            font-display: swap;
-        }
-
-        @font-face {
-            font-family: "Kugile Regular";
-            src: url("https://fontly-virid.vercel.app/fonts/ttf/kugile.regular.ttf") format("truetype");
-            font-weight: normal;
-            font-style: normal;
-            font-display: swap;
-        }
-
-        @font-face {
-            font-family: "Rockybilly Regular";
-            src: url("https://fontly-virid.vercel.app/fonts/ttf/rockybilly.regular.ttf") format("truetype");
-            font-weight: normal;
-            font-style: normal;
-            font-display: swap;
-        }
-
-        /* ==================== LAYOUT & CONTAINER ==================== */
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 1rem;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            padding: 20px;
         }
 
         header {
-            background: var(--bg-secondary);
-            border-bottom: 1px solid var(--border-color);
-            padding: 1.5rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 1px 3px var(--shadow-color);
-        }
-
-        .header-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-bottom: 30px;
             flex-wrap: wrap;
-            gap: 1rem;
+            gap: 15px;
         }
 
         h1 {
-            font-size: 1.75rem;
+            font-size: 28px;
             font-weight: 700;
-            color: var(--text-primary);
-            margin: 0;
-        }
-
-        .header-controls {
             display: flex;
-            gap: 1rem;
             align-items: center;
+            gap: 10px;
         }
 
-        /* ==================== BUTTONS ==================== */
+        .logo {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #FF6B6B, #FF8E8E);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .controls {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
         button {
-            padding: 0.5rem 1rem;
-            border: 1px solid var(--border-color);
+            padding: 8px 16px;
+            border: none;
             border-radius: 6px;
-            background: var(--bg-secondary);
-            color: var(--text-primary);
+            background-color: var(--accent-color);
+            color: white;
             cursor: pointer;
-            font-size: 0.875rem;
-            font-weight: 500;
-            transition: var(--transition);
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
         }
 
         button:hover {
-            background: var(--bg-tertiary);
-            border-color: var(--accent-color);
-            color: var(--accent-color);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
         }
 
-        button:active {
-            transform: scale(0.98);
-        }
-
-        button:focus-visible {
-            outline: var(--focus-ring);
-        }
-
-        .btn-primary {
-            background: var(--accent-color);
-            color: white;
-            border-color: var(--accent-color);
-        }
-
-        .btn-primary:hover {
-            background: var(--accent-hover);
-            border-color: var(--accent-hover);
-            color: white;
-        }
-
-        /* ==================== CONTROLS SECTION ==================== */
-        .controls {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin: 2rem 0;
+        .settings {
             display: flex;
-            gap: 1.5rem;
+            gap: 20px;
             flex-wrap: wrap;
-            align-items: center;
-        }
-
-        .control-group {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-        }
-
-        .control-group label {
-            font-weight: 500;
-            color: var(--text-secondary);
-            white-space: nowrap;
-        }
-
-        input[type="text"],
-        input[type="number"],
-        select {
-            padding: 0.5rem 0.75rem;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: var(--bg-secondary);
+            border-radius: 8px;
             border: 1px solid var(--border-color);
-            border-radius: 6px;
-            background: var(--bg-primary);
+        }
+
+        .setting-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .setting-group label {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+
+        .setting-group input[type="text"],
+        .setting-group input[type="number"] {
+            padding: 8px 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            background-color: var(--bg-primary);
             color: var(--text-primary);
-            font-size: 0.875rem;
-            transition: var(--transition);
+            font-size: 14px;
         }
 
-        input[type="text"]:focus,
-        input[type="number"]:focus,
-        select:focus {
-            outline: none;
-            border-color: var(--accent-color);
-            box-shadow: var(--focus-ring);
+        .setting-group input[type="range"] {
+            width: 150px;
         }
 
-        /* ==================== GRID & CARDS ==================== */
-        .fonts-grid {
+        .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
+            gap: 20px;
+            margin-top: 20px;
         }
 
-        .fonts-grid.list-view {
+        .gallery.list-view {
             grid-template-columns: 1fr;
         }
 
         .font-card {
-            background: var(--bg-secondary);
+            background-color: var(--bg-secondary);
             border: 1px solid var(--border-color);
             border-radius: 8px;
-            padding: 1.5rem;
-            transition: var(--transition);
-            box-shadow: var(--card-shadow);
+            padding: 20px;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow);
         }
 
         .font-card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 8px 24px var(--shadow-color);
-        }
-
-        .font-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 1rem;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
         }
 
         .font-name {
-            font-size: 1.125rem;
-            font-weight: 600;
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 12px;
             color: var(--text-primary);
-            margin-bottom: 0.25rem;
         }
 
         .font-preview {
-            min-height: 100px;
-            padding: 1rem;
-            background: var(--bg-tertiary);
-            border-radius: 8px;
-            margin: 1rem 0;
-            font-size: 2rem;
-            line-height: 1.3;
-            color: var(--text-primary);
+            font-size: 32px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            padding: 15px;
+            background-color: var(--bg-primary);
+            border-radius: 4px;
+            border: 1px solid var(--border-color);
             word-break: break-word;
+            min-height: 80px;
         }
 
         .font-controls {
             display: flex;
-            gap: 1rem;
+            gap: 10px;
             align-items: center;
             flex-wrap: wrap;
-            margin-top: 1rem;
         }
 
-        .slider-group {
+        .font-controls input[type="range"] {
             flex: 1;
-            min-width: 150px;
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
+            min-width: 100px;
         }
 
-        input[type="range"] {
-            flex: 1;
-            min-width: 80px;
-            cursor: pointer;
-        }
-
-        .font-size-value {
-            font-size: 0.875rem;
-            font-weight: 500;
+        .font-size-display {
+            font-size: 12px;
             color: var(--text-secondary);
-            width: 36px;
+            min-width: 50px;
             text-align: right;
         }
 
-        /* ==================== FOOTER ==================== */
-        footer {
-            background: var(--bg-secondary);
-            border-top: 1px solid var(--border-color);
-            padding: 2rem 0;
-            margin-top: 4rem;
-            text-align: center;
-            color: var(--text-secondary);
-            font-size: 0.875rem;
+        .hidden {
+            display: none;
         }
 
-        /* ==================== RESPONSIVE ==================== */
         @media (max-width: 768px) {
-            h1 {
-                font-size: 1.5rem;
-            }
-
-            .controls {
+            header {
                 flex-direction: column;
-                align-items: stretch;
+                align-items: flex-start;
             }
 
-            .control-group {
-                flex-direction: column;
-                align-items: stretch;
-            }
-
-            input[type="text"],
-            select {
-                width: 100%;
-            }
-
-            .fonts-grid {
+            .gallery {
                 grid-template-columns: 1fr;
             }
 
+            .settings {
+                flex-direction: column;
+            }
+
             .font-preview {
-                font-size: 1.5rem;
+                font-size: 24px;
             }
         }
 
-        /* ==================== ANIMATIONS ==================== */
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .font-card {
-            animation: fadeIn 0.3s ease-out;
-        }
-
-        /* ==================== ACCESSIBILITY ==================== */
         @media (prefers-reduced-motion: reduce) {
             * {
                 animation-duration: 0.01ms !important;
@@ -439,156 +225,142 @@
                 transition-duration: 0.01ms !important;
             }
         }
-
-        @media (prefers-color-scheme: dark) {
-            html {
-                color-scheme: dark;
-            }
-        }
     </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="header-content">
-                <h1>🎨 Fontly - Font Preview Gallery</h1>
-                <div class="header-controls">
-                    <button id="themeToggle" class="btn-primary">🌙 Dark Mode</button>
-                    <button id="viewToggle">📋 List View</button>
-                </div>
-            </div>
+        <h1>
+            <div class="logo">F</div>
+            Fontly - Font Preview Gallery
+        </h1>
+        <div class="controls">
+            <button id="themeToggle">🌙 Dark Mode</button>
+            <button id="viewToggle">📋 List View</button>
         </div>
     </header>
 
-    <main class="container">
-        <div class="controls">
-            <div class="control-group">
-                <label for="searchInput">Search:</label>
-                <input type="text" id="searchInput" placeholder="Search fonts...">
-            </div>
-            <div class="control-group">
-                <label for="sizeInput">Default Size:</label>
-                <input type="number" id="sizeInput" min="12" max="120" value="32">
-            </div>
+    <div class="settings">
+        <div class="setting-group">
+            <label for="searchInput">Search:</label>
+            <input type="text" id="searchInput" placeholder="Search fonts...">
         </div>
+        <div class="setting-group">
+            <label for="textInput">Custom Text:</label>
+            <input type="text" id="textInput" placeholder="Enter custom text..." value="The quick brown fox jumps over the lazy dog">
+        </div>
+        <div class="setting-group">
+            <label for="sizeInput">Default Size:</label>
+            <input type="number" id="sizeInput" value="32" min="8" max="128">
+        </div>
+    </div>
 
-        <div class="fonts-grid" id="fontsGrid"></div>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Fontly - Interactive Font Preview Gallery. Powered by Vercel CDN.</p>
-        <p>All fonts are hosted on Vercel's high-performance CDN for optimal delivery.</p>
-    </footer>
+    <div class="gallery" id="gallery"></div>
 
     <script>
-        // Font data
-        const fonts = [
-            { name: "Angelbanditdemoregular", family: "Angelbanditdemoregular" },
-            { name: "Cinzeldecorative Black", family: "Cinzeldecorative Black" },
-            { name: "Cinzeldecorative Bold", family: "Cinzeldecorative Bold" },
-            { name: "Cinzeldecorative Regular", family: "Cinzeldecorative Regular" },
-            { name: "Ebgaramond Initials", family: "Ebgaramond Initials" },
-            { name: "Ebgaramond08 Regular", family: "Ebgaramond08 Regular" },
-            { name: "Ebgaramond12 Regular", family: "Ebgaramond12 Regular" },
-            { name: "Goodly Regular", family: "Goodly Regular" },
-            { name: "Goodly Light", family: "Goodly Light" },
-            { name: "Goodly Medium", family: "Goodly Medium" },
-            { name: "Goodly Semibold", family: "Goodly Semibold" },
-            { name: "Kugile Regular", family: "Kugile Regular" },
-            { name: "Rockybilly Regular", family: "Rockybilly Regular" }
-        ];
+        const fonts = [{"name": "Angelbanditdemoregular", "file": "/fonts/ttf/AngelBanditDemoRegular.ttf", "format": "truetype"}, {"name": "Cinzeldecorative Bold", "file": "/fonts/ttf/CinzelDecorative-Bold.ttf", "format": "truetype"}, {"name": "Cinzeldecorative Regular", "file": "/fonts/ttf/CinzelDecorative-Regular.ttf", "format": "truetype"}, {"name": "Ebgaramond Initials", "file": "/fonts/ttf/EBGaramond-Initials.ttf", "format": "truetype"}, {"name": "Ebgaramond Initialsf1", "file": "/fonts/ttf/EBGaramond-InitialsF1.ttf", "format": "truetype"}, {"name": "Ebgaramond Initialsf2", "file": "/fonts/ttf/EBGaramond-InitialsF2.ttf", "format": "truetype"}, {"name": "Ebgaramond08 Italic", "file": "/fonts/ttf/EBGaramond08-Italic.ttf", "format": "truetype"}, {"name": "Ebgaramond08 Regular", "file": "/fonts/ttf/EBGaramond08-Regular.ttf", "format": "truetype"}, {"name": "Ebgaramond12 Allsc", "file": "/fonts/ttf/EBGaramond12-AllSC.ttf", "format": "truetype"}, {"name": "Ebgaramond12 Italic", "file": "/fonts/ttf/EBGaramond12-Italic.ttf", "format": "truetype"}, {"name": "Ebgaramond12 Regular", "file": "/fonts/ttf/EBGaramond12-Regular.ttf", "format": "truetype"}, {"name": "Ebgaramondsc08 Regular", "file": "/fonts/ttf/EBGaramondSC08-Regular.ttf", "format": "truetype"}, {"name": "Ebgaramondsc12 Regular", "file": "/fonts/ttf/EBGaramondSC12-Regular.ttf", "format": "truetype"}, {"name": "Kabisat Demo.Italic Tall", "file": "/fonts/ttf/kabisat-demo.italic-tall.ttf", "format": "truetype"}, {"name": "Kugile.Regular", "file": "/fonts/ttf/kugile.regular.ttf", "format": "truetype"}, {"name": "Nabana.Shadow Bold", "file": "/fonts/ttf/nabana.shadow-bold.ttf", "format": "truetype"}, {"name": "Noctra Drip.Outline Outline (1)", "file": "/fonts/ttf/noctra-drip.outline-outline (1).ttf", "format": "truetype"}, {"name": "Noctra Drip.Outline Outline", "file": "/fonts/ttf/noctra-drip.outline-outline.ttf", "format": "truetype"}, {"name": "Rockybilly.Regular", "file": "/fonts/ttf/rockybilly.regular.ttf", "format": "truetype"}, {"name": "Sho Card Caps.Regular (2)", "file": "/fonts/ttf/sho-card-caps.regular (2).ttf", "format": "truetype"}, {"name": "Sho Card Caps.Regular", "file": "/fonts/ttf/sho-card-caps.regular.ttf", "format": "truetype"}, {"name": "Sudegnakno4.Green Medium", "file": "/fonts/ttf/sudegnakno4.green-medium.ttf", "format": "truetype"}, {"name": "Cinzeldecorative Black", "file": "/fonts/otf/CinzelDecorative-Black.otf", "format": "opentype"}, {"name": "Cinzeldecorative Bold", "file": "/fonts/otf/CinzelDecorative-Bold.otf", "format": "opentype"}, {"name": "Cinzeldecorative Regular", "file": "/fonts/otf/CinzelDecorative-Regular.otf", "format": "opentype"}, {"name": "Goodly Extralight", "file": "/fonts/otf/goodly-extralight.otf", "format": "opentype"}, {"name": "Goodly Light", "file": "/fonts/otf/goodly-light.otf", "format": "opentype"}, {"name": "Goodly Medium", "file": "/fonts/otf/goodly-medium.otf", "format": "opentype"}, {"name": "Goodly Regular", "file": "/fonts/otf/goodly-regular.otf", "format": "opentype"}, {"name": "Goodly Semibold", "file": "/fonts/otf/goodly-semibold.otf", "format": "opentype"}, {"name": "Modernline Personal Use.Bold", "file": "/fonts/otf/modernline-personal-use.bold.otf", "format": "opentype"}, {"name": "Modernline Personal Use.Regular", "file": "/fonts/otf/modernline-personal-use.regular.otf", "format": "opentype"}, {"name": "Orange Avenue Demo.Outline", "file": "/fonts/otf/orange-avenue-demo.outline.otf", "format": "opentype"}, {"name": "Orange Avenue Demo.Regular", "file": "/fonts/otf/orange-avenue-demo.regular.otf", "format": "opentype"}, {"name": "Strenuous.3D", "file": "/fonts/otf/strenuous.3d.otf", "format": "opentype"}];
+        const gallery = document.getElementById('gallery');
+        const searchInput = document.getElementById('searchInput');
+        const textInput = document.getElementById('textInput');
+        const sizeInput = document.getElementById('sizeInput');
+        const themeToggle = document.getElementById('themeToggle');
+        const viewToggle = document.getElementById('viewToggle');
 
-        // Theme management
-        function initTheme() {
-            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            const savedTheme = localStorage.getItem('theme') || (prefersDark ? 'dark' : 'light');
-            document.documentElement.setAttribute('data-theme', savedTheme);
-            updateThemeButton();
+        let isDarkMode = localStorage.getItem('darkMode') === 'true';
+        let isListView = localStorage.getItem('listView') === 'true';
+        let defaultSize = parseInt(localStorage.getItem('defaultSize')) || 32;
+
+        // Initialize theme
+        if (isDarkMode) {
+            document.body.classList.add('dark-mode');
+            themeToggle.textContent = '☀️ Light Mode';
         }
 
-        function toggleTheme() {
-            const current = document.documentElement.getAttribute('data-theme');
-            const newTheme = current === 'dark' ? 'light' : 'dark';
-            document.documentElement.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            updateThemeButton();
+        // Initialize view
+        if (isListView) {
+            gallery.classList.add('list-view');
+            viewToggle.textContent = '🔲 Grid View';
         }
 
-        function updateThemeButton() {
-            const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-            document.getElementById('themeToggle').textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
-        }
-
-        // View management
-        let isListView = false;
-        function toggleView() {
-            isListView = !isListView;
-            document.getElementById('fontsGrid').classList.toggle('list-view');
-            document.getElementById('viewToggle').textContent = isListView ? '🔲 Grid View' : '📋 List View';
-        }
+        // Set initial size
+        sizeInput.value = defaultSize;
 
         // Render fonts
-        function renderFonts(filter = '') {
-            const grid = document.getElementById('fontsGrid');
-            const defaultSize = document.getElementById('sizeInput').value;
-            
-            const filtered = fonts.filter(font => 
-                font.name.toLowerCase().includes(filter.toLowerCase())
-            );
+        function renderFonts() {
+            gallery.innerHTML = '';
+            const searchTerm = searchInput.value.toLowerCase();
+            const customText = textInput.value || 'The quick brown fox jumps over the lazy dog';
 
-            grid.innerHTML = filtered.map(font => `
-                <div class="font-card">
-                    <div class="font-header">
-                        <div>
-                            <h2 class="font-name">${font.name}</h2>
+            fonts.forEach((font, index) => {
+                if (font.name.toLowerCase().includes(searchTerm)) {
+                    const card = document.createElement('div');
+                    card.className = 'font-card';
+                    card.innerHTML = `
+                        <div class="font-name">${font.name}</div>
+                        <div class="font-preview" id="preview-${index}" style="font-family: 'font-${index}'; font-size: ${defaultSize}px;">
+                            ${customText}
                         </div>
-                    </div>
-                    <div class="font-preview" style="font-family: '${font.family}'; font-size: ${defaultSize}px;">
-                        The quick brown fox jumps over the lazy dog
-                    </div>
-                    <div class="font-controls">
-                        <div class="slider-group">
-                            <label>Size:</label>
-                            <input type="range" min="12" max="120" value="${defaultSize}" class="font-size-slider" data-font="${font.family}">
-                            <span class="font-size-value">${defaultSize}px</span>
+                        <div class="font-controls">
+                            <input type="range" min="8" max="128" value="${defaultSize}" class="font-size-slider" data-index="${index}">
+                            <span class="font-size-display">${defaultSize}px</span>
                         </div>
-                    </div>
-                </div>
-            `).join('');
+                    `;
+                    gallery.appendChild(card);
 
-            // Add event listeners
-            document.querySelectorAll('.font-size-slider').forEach(slider => {
-                slider.addEventListener('input', (e) => {
-                    const fontFamily = e.target.dataset.font;
-                    const size = e.target.value;
-                    e.target.nextElementSibling.textContent = size + 'px';
-                    document.querySelectorAll(`[style*="font-family: '${fontFamily}'"]`).forEach(el => {
-                        el.style.fontSize = size + 'px';
+                    // Add event listener for size slider
+                    card.querySelector('.font-size-slider').addEventListener('input', (e) => {
+                        const size = e.target.value;
+                        document.getElementById(`preview-${index}`).style.fontSize = size + 'px';
+                        card.querySelector('.font-size-display').textContent = size + 'px';
                     });
-                });
+                }
             });
         }
 
+        // Create font-face rules
+        const style = document.createElement('style');
+        let fontFaceRules = '';
+        fonts.forEach((font, index) => {
+            fontFaceRules += `
+                @font-face {
+                    font-family: 'font-${index}';
+                    src: url('${font.file}') format('${font.format}');
+                    font-display: swap;
+                }
+            `;
+        });
+        style.textContent = fontFaceRules;
+        document.head.appendChild(style);
+
         // Event listeners
-        document.getElementById('themeToggle').addEventListener('click', toggleTheme);
-        document.getElementById('viewToggle').addEventListener('click', toggleView);
-        document.getElementById('searchInput').addEventListener('input', (e) => {
-            renderFonts(e.target.value);
+        searchInput.addEventListener('input', renderFonts);
+        textInput.addEventListener('input', renderFonts);
+        sizeInput.addEventListener('input', (e) => {
+            defaultSize = parseInt(e.target.value);
+            localStorage.setItem('defaultSize', defaultSize);
+            renderFonts();
         });
-        document.getElementById('sizeInput').addEventListener('change', () => {
-            renderFonts(document.getElementById('searchInput').value);
+
+        themeToggle.addEventListener('click', () => {
+            isDarkMode = !isDarkMode;
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('darkMode', isDarkMode);
+            themeToggle.textContent = isDarkMode ? '☀️ Light Mode' : '🌙 Dark Mode';
         });
+
+        viewToggle.addEventListener('click', () => {
+            isListView = !isListView;
+            gallery.classList.toggle('list-view');
+            localStorage.setItem('listView', isListView);
+            viewToggle.textContent = isListView ? '🔲 Grid View' : '📋 List View';
+        });
+
+        // Initial render
+        renderFonts();
 
         // Service Worker registration
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/sw.js').catch(err => {
-                console.log('Service Worker registration failed:', err);
-            });
+            navigator.serviceWorker.register('/sw.js').catch(err => console.log('SW registration failed:', err));
         }
-
-        // Initialize
-        initTheme();
-        renderFonts();
     </script>
 </body>
 </html>
