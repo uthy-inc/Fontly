@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "110 Besmellah [Takmob.Net]";
+    font-family: "110 Besmellah Takmob Net";
     src: url("https://fontly-virid.vercel.app/fonts/ttf/110-besmellah-takmob-net.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
@@ -191,6 +191,22 @@
 }
 
 @font-face {
+    font-family: "Angelbanditdemoregular";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/angelbanditdemoregular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Antiquestories";
+    src: url("https://fontly-virid.vercel.app/fonts/otf/antiquestories.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: "Arabquranislamic140 K7N4W";
     src: url("https://fontly-virid.vercel.app/fonts/ttf/arabquranislamic140-k7n4w.ttf") format("truetype");
     font-weight: normal;
@@ -207,8 +223,232 @@
 }
 
 @font-face {
+    font-family: "Armedlightning";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/armedlightning.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Armedlightning3D";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/armedlightning3d.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Armedlightning3Dital";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/armedlightning3dital.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Armedlightningacad";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/armedlightningacad.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Armedlightningacadital";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/armedlightningacadital.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Armedlightningchrome";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/armedlightningchrome.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Armedlightningchromeitalic";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/armedlightningchromeitalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Armedlightningcond";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/armedlightningcond.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Armedlightningcondital";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/armedlightningcondital.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Armedlightningexpand";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/armedlightningexpand.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Armedlightningexpandital";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/armedlightningexpandital.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Armedlightninggrad";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/armedlightninggrad.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Armedlightninggraditalic";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/armedlightninggraditalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Armedlightninghalf";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/armedlightninghalf.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Armedlightninghalfitalic";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/armedlightninghalfitalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Armedlightningitalic";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/armedlightningitalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Armedlightninglaser";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/armedlightninglaser.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Armedlightninglaseritalic";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/armedlightninglaseritalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Armedlightningleft";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/armedlightningleft.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Armedlightningsemital";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/armedlightningsemital.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Armedlightningsquared";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/armedlightningsquared.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Armedlightningsquaredital";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/armedlightningsquaredital.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Armedlightningsquaredsemital";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/armedlightningsquaredsemital.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Armedlightningsquaredsuperital";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/armedlightningsquaredsuperital.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Armedlightningsuperital";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/armedlightningsuperital.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Armedlightningtitle";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/armedlightningtitle.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Armedlightningtitleitalic";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/armedlightningtitleitalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: "Asyatupersonaluse";
     src: url("https://fontly-virid.vercel.app/fonts/otf/asyatupersonaluse.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Benyoritha G334D";
+    src: url("https://fontly-virid.vercel.app/fonts/otf/benyoritha-g334d.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -311,8 +551,136 @@
 }
 
 @font-face {
-    font-family: "Cairo Variablefont Slnt,Wght";
+    font-family: "Cairo Variablefont Slnt Wght";
     src: url("https://fontly-virid.vercel.app/fonts/ttf/cairo-variablefont-slnt-wght.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Chiralla Vgw9Y";
+    src: url("https://fontly-virid.vercel.app/fonts/otf/chiralla-vgw9y.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Cinzeldecorative Black";
+    src: url("https://fontly-virid.vercel.app/fonts/otf/cinzeldecorative-black.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Cinzeldecorative Bold";
+    src: url("https://fontly-virid.vercel.app/fonts/otf/cinzeldecorative-bold.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Cinzeldecorative Regular";
+    src: url("https://fontly-virid.vercel.app/fonts/otf/cinzeldecorative-regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Dalfitra";
+    src: url("https://fontly-virid.vercel.app/fonts/otf/dalfitra.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Danymeka Lxx2D";
+    src: url("https://fontly-virid.vercel.app/fonts/otf/danymeka-lxx2d.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Ebgaramond Initials";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/ebgaramond-initials.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Ebgaramond Initialsf1";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/ebgaramond-initialsf1.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Ebgaramond Initialsf2";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/ebgaramond-initialsf2.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Ebgaramond08 Italic";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/ebgaramond08-italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Ebgaramond08 Regular";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/ebgaramond08-regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Ebgaramond12 Allsc";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/ebgaramond12-allsc.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Ebgaramond12 Italic";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/ebgaramond12-italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Ebgaramond12 Regular";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/ebgaramond12-regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Ebgaramondsc08 Regular";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/ebgaramondsc08-regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Ebgaramondsc12 Regular";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/ebgaramondsc12-regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -407,6 +775,190 @@
 }
 
 @font-face {
+    font-family: "Glorida Black";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/glorida-black.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Glorida Blackitalic";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/glorida-blackitalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Glorida Bold";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/glorida-bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Glorida Bolditalic";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/glorida-bolditalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Glorida Extrabold";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/glorida-extrabold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Glorida Extrabolditalic";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/glorida-extrabolditalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Glorida Extralight";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/glorida-extralight.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Glorida Extralightitalic";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/glorida-extralightitalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Glorida Italic";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/glorida-italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Glorida Light";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/glorida-light.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Glorida Lightitalic";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/glorida-lightitalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Glorida Medium";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/glorida-medium.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Glorida Mediumitalic";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/glorida-mediumitalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Glorida Regular";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/glorida-regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Glorida Semibold";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/glorida-semibold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Glorida Semibolditalic";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/glorida-semibolditalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Glorida Thin";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/glorida-thin.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Glorida Thinitalic";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/glorida-thinitalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Goodly Extralight";
+    src: url("https://fontly-virid.vercel.app/fonts/otf/goodly-extralight.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Goodly Light";
+    src: url("https://fontly-virid.vercel.app/fonts/otf/goodly-light.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Goodly Medium";
+    src: url("https://fontly-virid.vercel.app/fonts/otf/goodly-medium.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Goodly Regular";
+    src: url("https://fontly-virid.vercel.app/fonts/otf/goodly-regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Goodly Semibold";
+    src: url("https://fontly-virid.vercel.app/fonts/otf/goodly-semibold.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: "Harmattan Bold";
     src: url("https://fontly-virid.vercel.app/fonts/ttf/harmattan-bold.ttf") format("truetype");
     font-weight: normal;
@@ -441,6 +993,30 @@
 @font-face {
     font-family: "Islamicicons600 3Lkbx";
     src: url("https://fontly-virid.vercel.app/fonts/ttf/islamicicons600-3lkbx.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Kabisat Demo.Italic Tall";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/kabisat-demo-italic-tall.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Kugile.Regular";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/kugile-regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lasthen";
+    src: url("https://fontly-virid.vercel.app/fonts/otf/lasthen.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -583,6 +1159,14 @@
 }
 
 @font-face {
+    font-family: "Marchevoked Demo";
+    src: url("https://fontly-virid.vercel.app/fonts/otf/marchevoked-demo.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: "Meilaarabicdemo Linebold";
     src: url("https://fontly-virid.vercel.app/fonts/otf/meilaarabicdemo-linebold.otf") format("opentype");
     font-weight: normal;
@@ -615,6 +1199,22 @@
 }
 
 @font-face {
+    font-family: "Modernline Personal Use.Bold";
+    src: url("https://fontly-virid.vercel.app/fonts/otf/modernline-personal-use-bold.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Modernline Personal Use.Regular";
+    src: url("https://fontly-virid.vercel.app/fonts/otf/modernline-personal-use-regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: "Mohammadrasoolallah1445 5Y1Aa";
     src: url("https://fontly-virid.vercel.app/fonts/ttf/mohammadrasoolallah1445-5y1aa.ttf") format("truetype");
     font-weight: normal;
@@ -641,6 +1241,54 @@
 @font-face {
     font-family: "Mustaqimdemo Yq82Y";
     src: url("https://fontly-virid.vercel.app/fonts/ttf/mustaqimdemo-yq82y.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Nabana.Shadow Bold";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/nabana-shadow-bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Noctra Drip.Outline Outline";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/noctra-drip-outline-outline.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Noctra Drip.Outline Outline (1)";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/noctra-drip-outline-outline-1.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Oliverra";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/oliverra.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Orange Avenue Demo.Outline";
+    src: url("https://fontly-virid.vercel.app/fonts/otf/orange-avenue-demo-outline.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Orange Avenue Demo.Regular";
+    src: url("https://fontly-virid.vercel.app/fonts/otf/orange-avenue-demo-regular.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -687,8 +1335,24 @@
 }
 
 @font-face {
-    font-family: "Ramis Arabic Trial.Medium";
+    font-family: "Ramis Arabic Trial Medium";
     src: url("https://fontly-virid.vercel.app/fonts/otf/ramis-arabic-trial-medium.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Rockybilly.Regular";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/rockybilly-regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Ruttany";
+    src: url("https://fontly-virid.vercel.app/fonts/otf/ruttany.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -751,6 +1415,38 @@
 }
 
 @font-face {
+    font-family: "Sho Card Caps.Regular";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/sho-card-caps-regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Sho Card Caps.Regular (2)";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/sho-card-caps-regular-2.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Strenuous.3D";
+    src: url("https://fontly-virid.vercel.app/fonts/otf/strenuous-3d.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Sudegnakno4.Green Medium";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/sudegnakno4-green-medium.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: "Tajawal Black";
     src: url("https://fontly-virid.vercel.app/fonts/ttf/tajawal-black.ttf") format("truetype");
     font-weight: normal;
@@ -801,6 +1497,30 @@
 @font-face {
     font-family: "Tajawal Regular";
     src: url("https://fontly-virid.vercel.app/fonts/ttf/tajawal-regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "The Beer Golden Palace";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/the-beer-golden-palace.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Travailacharn├Й Regular";
+    src: url("https://fontly-virid.vercel.app/fonts/otf/travailacharn-regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Wertign Personaluseonly";
+    src: url("https://fontly-virid.vercel.app/fonts/ttf/wertign-personaluseonly.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
