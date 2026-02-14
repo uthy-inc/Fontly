@@ -1810,7 +1810,7 @@
                 fontFaceRules += `
                     @font-face {
                         font-family: 'font-${index}';
-                        src: url('${font.file}') format('${font.format}');
+                        src: url('https://fontly-virid.vercel.app${font.file}') format('${font.format}');
                         font-display: swap;
                     }
                 `;
@@ -1873,14 +1873,14 @@
                             <div class="code-block" data-index="${fontIndex}">
                                 <code>@font-face {
   font-family: '${font.name}';
-  src: url('${font.file}') format('${font.format}');
+  src: url('https://fontly-virid.vercel.app${font.file}') format('${font.format}');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }</code>
                                 <button class="copy-btn" data-code="@font-face {
   font-family: '${font.name}';
-  src: url('${font.file}') format('${font.format}');
+  src: url('https://fontly-virid.vercel.app${font.file}') format('${font.format}');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
